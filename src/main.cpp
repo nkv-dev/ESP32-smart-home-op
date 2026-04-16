@@ -1,14 +1,21 @@
 #include <Arduino.h>
+#include <Wire.h>
+#include "lcd.h"
 
-#define LED_PIN 2
+int counter = 0;
 
 void setup() {
-  pinMode(LED_PIN, OUTPUT);
+    Serial.begin(115200);
+    lcd_init();
+    lcd_print_at("ESP32 Ready!", 0, 0);
+    Serial.println("LCD Initialized");
 }
 
 void loop() {
-  digitalWrite(LED_PIN, HIGH);
-  delay(1000);
-  digitalWrite(LED_PIN, LOW);
-  delay(1000);
+    counter++;
+    lcd_set_cursor(0, 1);
+    lcd_print("Counter: ");
+    lcd.print(counter);
+    Serial.println("Counter: " + String(counter));
+    delay(1000);
 }
