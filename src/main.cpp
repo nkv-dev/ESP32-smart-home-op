@@ -53,3 +53,7 @@ void loop() {
     // Wait 1 second before next update
     delay(1000);
 }
+
+
+
+// laptop test setup
