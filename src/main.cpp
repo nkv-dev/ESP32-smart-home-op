@@ -3,7 +3,7 @@
  * ESP32 DHT11 Humidity & Temperature Sensor with LCD Display
  * ===================================================================
  * 
- * Project: ESP32 Weather Station
+ * Project: ESP32 Smart Home Weather Station
  * Description: Read DHT11 sensor data and display on I2C LCD 16x2
  * Author: ESP32 Project
  * Date: 2026
