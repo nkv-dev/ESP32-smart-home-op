@@ -75,7 +75,7 @@ void setup() {
     // Baud rate: 115200
     Serial.begin(115200);
     Serial.println("========================================");
-    Serial.println("DHT11 + LCD Weather Station Starting...");
+    Serial.println("DHT11 + LCD Smart switch device / IOT begins...");
     Serial.println("========================================");
 
     // Initialize I2C communication on ESP32
